@@ -6,7 +6,7 @@ local="127.0.0.1"
 website_list=["www.facebook.com","facebook.com","www.twitter.com","twitter.com"]
 
 while True:
-    if dt(dt.now().year,dt.now().month,dt.now().day,0) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,1):
+    if dt(dt.now().year,dt.now().month,dt.now().day,0) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,23):
         with open(hosts_file,'r+') as file:
             content=file.read()
             for website in website_list:
